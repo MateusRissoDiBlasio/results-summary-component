@@ -25,7 +25,7 @@ main{
     width: 333px;
     height: 312px;
     padding: 21px;
-    background-image: linear-gradient(to bottom, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    background-image: linear-gradient(to bottom, hsl(252, 100%, 62%), hsl(241, 81%, 54%));
     color:  hsl(0, 0%, 100%);
     gap: 9px;
     border-radius: 0 0 30px 30px;
@@ -94,7 +94,7 @@ main{
     button:hover{
         border: none;
         cursor: pointer;
-        background-image: linear-gradient(to bottom, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+        background-image: linear-gradient(to bottom,  hsla(256, 72%, 46%, 1), hsl(241, 81%, 54%));
     }
 
     .reaction{
