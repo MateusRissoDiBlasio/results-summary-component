@@ -1,0 +1,228 @@
+*{
+    margin: 0;
+}
+
+@font-face {
+    font-family: "HankenGrotesk";
+    src: url(./assets/fonts/HankenGrotesk-VariableFont_wght.ttf);
+}
+
+body{
+    font-family: "HankenGrotesk", sans-serif;
+    width: 100vw;
+    height: 100vh;    
+}
+
+main{
+    align-self: center;
+    justify-self: center;
+}
+
+.result-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 333px;
+    height: 312px;
+    padding: 21px;
+    background-image: linear-gradient(to bottom, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    color:  hsl(0, 0%, 100%);
+    gap: 9px;
+    border-radius: 0 0 30px 30px;
+    p:first-of-type{
+        font-size: 18px;
+        font-weight: 500;
+    }
+    p{
+        text-align: center;
+        max-width: 280px; 
+        color: hsl(221, 100%, 96%, 0.7);
+        font-size: 16px;
+    }
+    h2{
+        font-size: 24px;
+        font-weight: 600;
+        margin-bottom: -1px;
+    }
+    .score{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 140px;
+        height: 140px;
+        background-image: linear-gradient(to bottom, hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+        border-radius: 50%;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        h1{
+            font-size: 56px;
+        }
+        p{
+            font-size: 15px ;
+            color: hsl(241, 100%, 89%, 0.5);
+        }
+    }
+}
+
+.summary{
+    display: flex;
+    flex-direction: column;
+    padding: 22px 28px 22px 28px;
+    gap: 16.5px;
+    h3{
+        color: hsl(224, 30%, 27%);
+        margin-bottom: 7px;
+    }
+    p{
+        font-size: 16px;
+    }
+    button{
+        width: 315px;
+        align-self: center;
+        justify-self: center;
+        height: 56px;
+        border-radius: 25px;
+        border-style: none;
+        background-color: hsl(224, 30%, 27%);
+        color: hsl(0, 0%, 100%);
+        margin-top: 8px;
+        font-family: "HankenGrotesk", sans-serif;
+        font-size: 18px;
+        font-weight: 600;
+    }
+    button:hover{
+        border: none;
+        background-color: hsla(256, 72%, 46%, 1);
+    }
+
+    .reaction{
+        background-color: hsl(0, 100%, 67%, 0.07);
+        p:first-of-type{
+            color: hsl(0, 100%, 67%, 0.8);;
+        }
+    }
+    .memory{
+        background-color:  hsl(39, 100%, 56%, 0.07);
+        p:first-of-type{
+            color: hsl(39, 100%, 56%, 0.8);
+        }
+    }
+    .verbal{
+        background-color: hsl(166, 100%, 37%, 0.07);
+        p:first-of-type{
+            color:  hsl(166, 100%, 37%, 0.8);
+        }
+    }
+    .visual{
+        background-color: hsl(234, 85%, 45%, 0.07);
+        p:first-of-type{
+            color:  hsl(234, 85%, 45%, 0.8);
+        }
+    }
+}
+
+.results{
+    display: flex;
+    flex-direction: row;
+    width: 285px ;
+    align-self: center;
+    justify-self: center;  
+    justify-content: space-between;
+    padding: 17px;
+    border-radius: 10px; 
+    /* background-color: aqua;    */
+    font-weight: 700;
+    font-size: 12px;
+    span{
+        color:hsl(224, 20%, 65%);
+    }
+    p{
+        display: flex;
+        color: hsl(224, 30%, 27%);
+        gap: 10px;
+    }
+    img{
+        width: 20px;
+    }
+}
+
+footer{
+    margin-top: 20px;
+    .attribution { 
+        font-size: 11px; 
+        text-align: center;
+        a { 
+            color: hsl(228, 45%, 44%);
+        }
+    }
+}
+
+@media (min-width: 1024px){
+
+    body{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: hsl(221, 100%, 96%);
+    }
+
+    main{
+        display: flex;
+        flex-direction: row;     
+        background-color: hsl(0, 0%, 100%);   
+        border-radius: 50px 25px 25px 50px;
+    }
+
+    .result-container{
+        width: 325px;
+        height: 452px;
+        padding-top: 37px;
+        border-radius: 30px;
+        p:first-of-type{
+            font-size: 24px;
+        }
+        p{
+            max-width: 260px; 
+            font-size: 18px;
+        }
+        h2{
+            font-size: 28px;
+            margin-bottom: 7px;
+            margin-top: 8px;
+        }
+        .score{
+            width: 200px;
+            height: 200px;
+            margin-top: 26px;
+            h1{
+                font-size: 72px;
+            }
+            p{
+                margin-top: -8px;
+                font-size: 18px ;
+            }
+        }
+    }
+
+    .summary{
+        padding: 40px 40px 0px 40px;
+        gap: 15.5px;
+        h3{
+            font-size: 22px;
+            margin-bottom: 12px;
+        }
+        p{
+            font-size: 18px;
+            font-weight: 600;
+        }
+        button{
+            margin-top: 24px;
+            width: 284px;
+        }
+    }
+
+    .results{
+        width: 250px;        
+    }
+}
